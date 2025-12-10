@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Backend Connection</title>
+</head>
+<body>
+    <h1>Backend Connection Test</h1>
+    <button onclick="testBackend()">Test Backend Connection</button>
+    <div id="result" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc;"></div>
+
+    <script>
+        async function testBackend() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = 'Testing...';
+            
+            try {
+                // Test 1: Root endpoint
+                const response1 = await fetch('http://localhost:4001/');
+                const data1 = await response1.text();
+                resultDiv.innerHTML += '<p>✅ Root endpoint works: ' + data1 + '</p>';
+                
+                // Test 2: Login endpoint
+                const response2 = await fetch('http://localhost:4001/auth/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        email: 'admin@angelone.com',
+                        password: 'admin123456'
+                    })
+                });
+                
+                const data2 = await response2.json();
+                resultDiv.innerHTML += '<p>Login response status: ' + response2.status + '</p>';
+                resultDiv.innerHTML += '<p>Login response: ' + JSON.stringify(data2) + '</p>';
+                
+            } catch (error) {
+                resultDiv.innerHTML += '<p>❌ Error: ' + error.message + '</p>';
+                console.error('Full error:', error);
+            }
+        }
+    </script>
+</body>
+</html>

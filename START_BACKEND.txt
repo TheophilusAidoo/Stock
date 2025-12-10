@@ -1,0 +1,48 @@
+═══════════════════════════════════════════════════════════════
+              🔥 BACKEND IS NOT RUNNING - START IT NOW!
+═══════════════════════════════════════════════════════════════
+
+ERROR YOU'RE SEEING:
+-------------------
+ERR_CONNECTION_REFUSED on http://localhost:4001
+
+This means: Backend server is NOT running!
+
+
+🚀 START BACKEND NOW:
+---------------------
+
+1. Open Terminal (Applications → Utilities → Terminal)
+
+2. Copy and paste this command:
+   cd "/Users/alphamac/Downloads/Angelone 2/backend"
+
+3. Then run:
+   PORT=4001 HOST=localhost npm run start:dev
+
+4. Wait for this message:
+   🚀 Backend server is running on http://localhost:4001
+
+
+✅ VERIFY IT'S WORKING:
+-----------------------
+
+Open a NEW Terminal window and run:
+curl http://localhost:4001/health
+
+You should see:
+{"status":"ok","timestamp":"...","message":"Backend API is running"}
+
+
+✅ THEN TRY LOGIN AGAIN:
+------------------------
+
+1. Go back to browser
+2. Refresh page (Cmd + Shift + R)
+3. Try login again
+4. Should work now! ✅
+
+
+═══════════════════════════════════════════════════════════════
+           ONCE BACKEND STARTS, LOGIN WILL WORK!
+═══════════════════════════════════════════════════════════════
