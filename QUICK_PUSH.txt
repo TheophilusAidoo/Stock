@@ -1,0 +1,43 @@
+═══════════════════════════════════════════════════════════════
+              🚀 QUICK SETUP - PUSH TO GITHUB NOW
+═══════════════════════════════════════════════════════════════
+
+✅ REMOTE ADDED: https://github.com/TheophilusAidoo/Stock.git
+✅ COMMIT READY: All code committed
+✅ BRANCH: main
+
+
+🔐 SET UP AUTHENTICATION (2 MINUTES):
+--------------------------------------
+
+STEP 1: Create Personal Access Token
+-------------------------------------
+1. Open: https://github.com/settings/tokens
+2. Click "Generate new token" → "Generate new token (classic)"
+3. Name: StockMart Project
+4. Check: repo (full control)
+5. Click "Generate token"
+6. COPY THE TOKEN (you won't see it again!)
+
+
+STEP 2: Push to GitHub
+-----------------------
+Open Terminal and run:
+
+cd "/Users/alphamac/Downloads/Angelone 2"
+git push -u origin main
+
+When asked:
+Username: TheophilusAidoo
+Password: [paste your token here]
+
+
+✅ DONE!
+--------
+Your code will be pushed to:
+https://github.com/TheophilusAidoo/Stock
+
+
+═══════════════════════════════════════════════════════════════
+        AFTER PUSH, I CAN COMMIT & PUSH FOR YOU AUTOMATICALLY!
+═══════════════════════════════════════════════════════════════
