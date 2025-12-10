@@ -1,12 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Temporarily commented out for dev server - uncomment for production static export
-  // output: 'export',
+  // Netlify requires trailingSlash for proper routing
   trailingSlash: true,
   images: {
     unoptimized: true,
   },
+  // Remove output: 'standalone' - let Netlify plugin handle it
   /* config options here */
 };
 

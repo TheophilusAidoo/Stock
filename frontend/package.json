@@ -6,7 +6,8 @@
     "dev": "next dev -H localhost -p 3002",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "cp -r public .next/standalone/public || true"
   },
   "dependencies": {
     "@supabase/ssr": "^0.8.0",
